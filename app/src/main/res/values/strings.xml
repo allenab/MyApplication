@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">Allens Rechner</string>
     <string name="Dividend">Dividend</string>
     <string name="Divisor">Divisor</string>
     <string name="Output">Output</string>
