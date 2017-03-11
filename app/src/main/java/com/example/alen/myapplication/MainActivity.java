@@ -29,10 +29,14 @@ public class MainActivity extends AppCompatActivity {
         bBerechne.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                float dividend=Float.parseFloat(etDividend.getText().toString());
-                float divisor=Float.parseFloat(etDivisor.getText().toString());
-                float ergebnis = dividend/divisor;
-                tvOutput.setText(Float.toString(ergebnis));
+                try {
+                    float dividend = Float.parseFloat(etDividend.getText().toString());
+                    float divisor = Float.parseFloat(etDivisor.getText().toString());
+                    float ergebnis = dividend / divisor;
+                    tvOutput.setText(Float.toString(ergebnis));
+                }  catch (Exception e) {
+                    tvOutput.setText("Werte eingeben!!!");
+                }
             }
         });
     }
